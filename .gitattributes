@@ -1,0 +1,49 @@
+
+* text=auto
+
+*.unity text eol=lf
+*.prefab text eol=lf
+*.asset text eol=lf
+*.meta text eol=lf
+*.json text eol=lf
+*.mat text eol=lf
+*.mesh text eol=lf
+*.txt text eol=lf
+
+*.cs diff=csharp text
+*.shader text
+*.md5 text
+*.compute text
+*.md text
+
+# Binaries
+**/Assets/**/*.png -text
+**/Assets/**/*.tif -text
+**/Assets/**/*.tga -text
+**/Assets/**/*.fbx -text
+**/Assets/**/*.FBX -text
+**/Assets/**/*.ttf -text
+**/Assets/**/*.dll -text
+**/Assets/**/*.bundle -text
+**/Assets/**/*.so -text
+**/Assets/**/*.zip -text
+**/Assets/**/*.exr -text
+**/Assets/**/*.hdr -text
+**/Assets/**/*.ma -text
+**/Assets/**/*.mp3 -text
+**/Assets/**/*.obj -text
+**/Assets/**/*.OBJ -text
+**/Assets/**/*.TGA -text
+**/Assets/**/*.mdb -text
+**/Assets/**/*.pdf -text
+**/Assets/**/*.asset -text
+**/Assets/**/*.bytes -text
+**/Assets/**/*.aif -text
+**/Assets/**/*.bmp -text
+**/Assets/**/*.pdt -text
+**/Assets/**/*.psd -text
+**/Assets/**/*.sbsar -text
+**/Assets/**/*.unity -text
+**/Assets/**/*.entities -text
+**/Assets/**/*.wav -text
+
