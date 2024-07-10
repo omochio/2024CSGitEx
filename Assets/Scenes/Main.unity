@@ -243,6 +243,33 @@ MonoBehaviour:
   _initPos: {x: 0, y: -4, z: 0}
   _paddleTf: {fileID: 125409134}
   _paddleSpd: 5
+  _dashPower: 0.1
+  _dashDuration: 0.5
+  _dashCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0.008621216
+      value: 0.4901123
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.98794556
+      value: 0.0065994263
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  _dashCoolDownSec: 2
 --- !u!1 &217740465
 GameObject:
   m_ObjectHideFlags: 0
