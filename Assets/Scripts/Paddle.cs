@@ -4,10 +4,17 @@ using UnityEngine.InputSystem;
 public class Paddle : MonoBehaviour
 {
     [SerializeField]
+    Vector3 _initPos;
+    [SerializeField]
     Transform _paddleTf;
     [Tooltip("ƒpƒhƒ‹‚ÌˆÚ“®‘¬“x")]
     [SerializeField, Min(0f)]
     float _paddleSpd;
+
+    void OnEnable()
+    {
+        transform.position = _initPos;
+    }
 
     void Update()
     {
