@@ -8,7 +8,12 @@ public class Paddle : MonoBehaviour
     [Tooltip("パドルの移動速度")]
     [SerializeField, Min(0f)]
     float _paddleSpd;
+    private GameObject scoreText; // 今回追加箇所
 
+    void Start()
+    {
+        scoreText = GameObject.Find("ScoreText"); // 今回追加箇所 
+    }
     void Update()
     {
         // キーボードが接続されていなければnull
@@ -37,6 +42,7 @@ public class Paddle : MonoBehaviour
             if (collision.gameObject != null)
             {
                 Destroy(collision.gameObject);
+                scoreText.GetComponent<ScoreManager>().score = scoreText.GetComponent<ScoreManager>().score + 1; // 今回追加箇所
             }
         }
     }
