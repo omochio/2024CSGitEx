@@ -16,6 +16,8 @@ public class Paddle : MonoBehaviour
 
     [Tooltip("ƒpƒhƒ‹‚ÌˆÚ“®‘¬“x"), SerializeField, Min(0f)]
     float _paddleSpd;
+    private GameObject scoreText; // ¡‰ñ’Ç‰Á‰ÓŠ
+
 
 
     void OnEnable()
@@ -36,12 +38,13 @@ public class Paddle : MonoBehaviour
     float _dashCoolDownSec;
     bool _isDashCoolDown;
 
+
+
+
     void Start()
     {
-        
+        scoreText = GameObject.Find("ScoreText"); // ¡‰ñ’Ç‰Á‰ÓŠ 
     }
-
-
 
     void Update()
     {
@@ -104,6 +107,7 @@ public class Paddle : MonoBehaviour
             if (collision.gameObject != null)
             {
                 Destroy(collision.gameObject);
+                scoreText.GetComponent<ScoreManager>().score = scoreText.GetComponent<ScoreManager>().score + 1; // ¡‰ñ’Ç‰Á‰ÓŠ
             }
         }
     }
